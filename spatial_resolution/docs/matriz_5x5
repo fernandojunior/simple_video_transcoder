@@ -1,0 +1,23 @@
+[Matriz 5x5]
+
+
+X(i-2,j-2)  X(i-2,j-1)  X(i-2,j)   X(i-2,j+1)   X(i-2,j+2)
+X(i-1,j-2)  X(i-1,j-1)  X(i-1,j)   X(i-1,j+1)   X(i-1,j+2)
+X(i  ,j-2)  X(i  ,j-1)  X(i  ,j)   X(i  ,j+1)   X(i  ,j+2)
+X(i+1,j-2)  X(i+1,j-1)  X(i+1,j)   X(i+1,j+1)   X(i+1,j+2)
+X(i+2,j-2)  X(i+2,j-1)  X(i+2,j)   X(i+2,j+1)   X(i+2,j+2)
+
+
+
+[Matriz 5x5 Serializada]
+
+float of = iHeight * FIN.width + iWidth; // posicao do pixel no frame
+
+Object center = frame[iLayer] + of        // valor do pixel, conforme sua posicao no frame, em uma determinada camada iLayer
+
+*(center-2width-2);*(center-2width-1);*(center-2width);*(center-2width+1);*(center-2width+2);
+*(center- width-2);*(center- width-1);*(center- width);*(center- width+1);*(center- width+2);
+*(center       -2);*(center       -1);*(center       );*(center       +1);*(center       +2);
+*(center+ width-2);*(center+ width-1);*(center+ width);*(center+ width+1);*(center+ width+2);
+*(center+2width-2);*(center+2width-1);*(center+2width);*(center+2width+1);*(center+2width+2);
+
